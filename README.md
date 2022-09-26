@@ -15,5 +15,9 @@ final productRepositoryProvider = Provider<FakeProductsRepository>((ref) {
 })
 ```
 
+Autodispose
+- Try to use autodispose when using `streamProvider` and `futureProvider`
+- This will close the coneection to the stream when it is no longer needed
+
 
 ### [LICENSE: MIT](../LICENSE.md)
