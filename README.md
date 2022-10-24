@@ -35,6 +35,42 @@ void main() {
   ...
 }
 ```
+
+<hr>
+
+Using a custom page builder
+
+Using the default material page transition:
+```dart
+GoRoute(
+  path: 'cart',
+  builder: (context, state) => const ShoppingCartScreen(),
+)
+```
+Using a custom page transition:
+```dart
+GoRoute(
+  path: 'cart',
+  pageBuilder: (context, state) => MaterialPage(
+    key: state.pageKey,
+    fullscreenDialog: true,
+    child: const ShoppingCartScreen(),
+  ),
+)
+
+// Return a MaterialPage.
+
+// state.pageKey: is based on the current path for that page in the stack of pages, so it will uniquely identify the page without having to hardcode a key or come up with one yourself
+
+/* fullScreenDialog ->
+page will slide from the bottom and affect the close/back icon on the appbar.
+*/
+```
+More about [transition](https://docs.page/csells/go_router/transitions)
+
+<hr>
+
+
 ### Riverpod
 How to create providers:
 
