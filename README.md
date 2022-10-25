@@ -69,7 +69,7 @@ More about [transition](https://docs.page/csells/go_router/transitions)
 
 <br>
 
-Adding parameters
+<u>Adding parameters</u>
 ```dart
 GoRoute(
   path: 'product/:id',
@@ -88,6 +88,51 @@ context.goNamed(
   params: {'id': product.id},
 )
 ```
+
+<br>
+
+<u>Error handling</u>
+
+GoRouter will show a default error screen in the following cases:
+
+- Route cannot be found for a giver URI
+- More than one route matches a location
+- Any GoRouter builder throws an exception
+
+<img src="assets/goRouter_error.png" style="width: 400px" alt="default error page">
+
+<br>
+
+You can define your own custom `errorBuilder` as well:
+```dart
+final goRouter = GoRouter(
+  routes: [ ... ],
+  errorBuilder: (context, state) => const NotFoundScreen(),
+);
+```
+Exception:
+
+Routes with parameters
+```dart
+GoRoute(
+  path: 'product/:id',
+  name: AppRoute.product.name,
+  builder: (context, state) {
+    final productId = state.params['id']!;
+    return ProductScreen(productId: productId);
+  },
+)
+
+// passing a parameter to a product that does not exist:
+context.goNamed(
+  AppRoute.product.name,
+  params: {'id': 'non-existent-id'},
+)
+
+/* GoRouter will find a matching product/:id route and will NOT call the errorBuilder.
+This means that you will need to handle a "product not found" page for the ProductScreen.
+```
+
 <hr>
 
 
