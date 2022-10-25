@@ -149,9 +149,10 @@ This means that you will need to handle a "product not found" page for the Produ
 `go`: Jumps from any given route to any other route inside of the GoRouter hierarchy. This means that going to the target destination will discard the current stack.
 
 `push`: Using push will always push the destination route on top of the existing navigation stack.
-
+<div class="flex">
 <img src="assets/goRouter_hierarchy.png" style="width: 300px; height: 200px" alt="goRouter hierarchy">
 <img src="assets/goRouter_push_vs_go.png" style="width: 300px; height: 200px" alt="push vs go">
+</div>
 
 Read more [here](https://codewithandrea.com/articles/flutter-navigation-gorouter-go-vs-push/)
 
