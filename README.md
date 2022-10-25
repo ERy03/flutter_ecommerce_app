@@ -133,6 +133,19 @@ context.goNamed(
 This means that you will need to handle a "product not found" page for the ProductScreen.
 ```
 
+<br>
+
+<u>What is the difference between `go` and `push`?</u>
+
+`go`: Jumps from any given route to any other route inside of the GoRouter hierarchy. This means that going to the target destination will discard the current stack.
+
+`push`: Using push will always push the destination route on top of the existing navigation stack.
+
+<img src="assets/goRouter_hierarchy.png" style="width: 400px; height: 250px" alt="goRouter hierarchy">
+<img src="assets/goRouter_push_vs_go.png" style="width: 400px; height: 250px" alt="push vs go">
+
+Read more [here]("https://codewithandrea.com/articles/flutter-navigation-gorouter-go-vs-push/")
+
 <hr>
 
 

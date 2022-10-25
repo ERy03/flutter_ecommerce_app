@@ -105,5 +105,5 @@ final goRouter = GoRouter(
       ],
     ),
   ],
-  // errorBuilder: (context, state) => const NotFoundScreen(),
+  errorBuilder: (context, state) => const NotFoundScreen(),
 );
