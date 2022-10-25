@@ -24,7 +24,7 @@ final goRouter = GoRouter(
   routes: [...],
 ```
 
-Changing the URL path strategy
+<u>Changing the URL path strategy</u>
 ```dart
 // ignore: depend_on_referenced_packages
 import 'package:flutter_web_plugins/url_strategy.dart';
@@ -35,10 +35,9 @@ void main() {
   ...
 }
 ```
+<br>
 
-<hr>
-
-Using a custom page builder
+<u>Using a custom page builder</u>
 
 Using the default material page transition:
 ```dart
