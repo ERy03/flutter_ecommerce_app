@@ -67,6 +67,27 @@ page will slide from the bottom and affect the close/back icon on the appbar.
 ```
 More about [transition](https://docs.page/csells/go_router/transitions)
 
+<br>
+
+Adding parameters
+```dart
+GoRoute(
+  path: 'product/:id',
+  name: AppRoute.product.name, //enum
+  builder: (context, state) {
+    final productId = state.params['id']!;
+    return ProductScreen(productId: productId);
+  },
+)
+```
+
+Inside your widget, pass the params as map literals.
+```dart
+context.goNamed(
+  AppRoute.product.name,
+  params: {'id': product.id},
+)
+```
 <hr>
 
 
