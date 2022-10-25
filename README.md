@@ -141,8 +141,8 @@ This means that you will need to handle a "product not found" page for the Produ
 
 `push`: Using push will always push the destination route on top of the existing navigation stack.
 
-<img src="assets/goRouter_hierarchy.png" style="width: 400px; height: 250px" alt="goRouter hierarchy">
-<img src="assets/goRouter_push_vs_go.png" style="width: 400px; height: 250px" alt="push vs go">
+<img src="assets/goRouter_hierarchy.png" style="width: 300px; height: 200px" alt="goRouter hierarchy">
+<img src="assets/goRouter_push_vs_go.png" style="width: 300px; height: 200px" alt="push vs go">
 
 Read more [here]("https://codewithandrea.com/articles/flutter-navigation-gorouter-go-vs-push/")
 
