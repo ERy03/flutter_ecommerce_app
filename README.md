@@ -5,7 +5,7 @@
 ### GoRouter 5.1.1
 Install GoRouter and and configure it inside `MaterialApp.router` using the `routeConfig` property.
 
-``` Dart
+``` dart
 return MaterialApp.router(
   routerConfig: goRouter,
   ...
@@ -25,6 +25,7 @@ final goRouter = GoRouter(
 ```
 
 <ins>Changing the URL path strategy</ins>
+
 ```dart
 // ignore: depend_on_referenced_packages
 import 'package:flutter_web_plugins/url_strategy.dart';
@@ -35,11 +36,13 @@ void main() {
   ...
 }
 ```
+
 <br>
 
 <ins>Using a custom page builder</ins>
 
 Using the default material page transition:
+
 ```dart
 GoRoute(
   path: 'cart',
@@ -47,6 +50,7 @@ GoRoute(
 )
 ```
 Using a custom page transition:
+
 ```dart
 GoRoute(
   path: 'cart',
@@ -57,11 +61,13 @@ GoRoute(
   ),
 )
 
-// Return a MaterialPage.
+/*
+Return a MaterialPage.
 
-// state.pageKey: is based on the current path for that page in the stack of pages, so it will uniquely identify the page without having to hardcode a key or come up with one yourself
+state.pageKey: is based on the current path for that page in the stack of pages,
+so it will uniquely identify the page without having to hardcode a key or come up with one yourself
 
-/* fullScreenDialog ->
+fullScreenDialog ->
 page will slide from the bottom and affect the close/back icon on the appbar.
 */
 ```
@@ -70,6 +76,7 @@ More about [transition](https://docs.page/csells/go_router/transitions)
 <br>
 
 <ins>Adding parameters</ins>
+
 ```dart
 GoRoute(
   path: 'product/:id',
@@ -104,6 +111,7 @@ GoRouter will show a default error screen in the following cases:
 <br>
 
 You can define your own custom `errorBuilder` as well:
+
 ```dart
 final goRouter = GoRouter(
   routes: [ ... ],
@@ -113,6 +121,7 @@ final goRouter = GoRouter(
 Exception:
 
 Routes with parameters
+
 ```dart
 GoRoute(
   path: 'product/:id',
@@ -145,6 +154,9 @@ This means that you will need to handle a "product not found" page for the Produ
 <img src="assets/goRouter_push_vs_go.png" style="width: 300px; height: 200px" alt="push vs go">
 
 Read more [here]("https://codewithandrea.com/articles/flutter-navigation-gorouter-go-vs-push/")
+
+<br>
+
 
 
 <hr>
