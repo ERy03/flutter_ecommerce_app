@@ -135,7 +135,7 @@ This means that you will need to handle a "product not found" page for the Produ
 
 <br>
 
-<u>What is the difference between `go` and `push`?</u>
+<ins>What is the difference between `go` and `push`?</ins>
 
 `go`: Jumps from any given route to any other route inside of the GoRouter hierarchy. This means that going to the target destination will discard the current stack.
 
@@ -145,6 +145,7 @@ This means that you will need to handle a "product not found" page for the Produ
 <img src="assets/goRouter_push_vs_go.png" style="width: 300px; height: 200px" alt="push vs go">
 
 Read more [here]("https://codewithandrea.com/articles/flutter-navigation-gorouter-go-vs-push/")
+
 
 <hr>
 
