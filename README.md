@@ -24,7 +24,7 @@ final goRouter = GoRouter(
   routes: [...],
 ```
 
-<u>Changing the URL path strategy</u>
+<ins>Changing the URL path strategy</ins>
 ```dart
 // ignore: depend_on_referenced_packages
 import 'package:flutter_web_plugins/url_strategy.dart';
@@ -37,7 +37,7 @@ void main() {
 ```
 <br>
 
-<u>Using a custom page builder</u>
+<ins>Using a custom page builder</ins>
 
 Using the default material page transition:
 ```dart
@@ -69,7 +69,7 @@ More about [transition](https://docs.page/csells/go_router/transitions)
 
 <br>
 
-<u>Adding parameters</u>
+<ins>Adding parameters</ins>
 ```dart
 GoRoute(
   path: 'product/:id',
@@ -91,7 +91,7 @@ context.goNamed(
 
 <br>
 
-<u>Error handling</u>
+<ins>Error handling</ins>
 
 GoRouter will show a default error screen in the following cases:
 
